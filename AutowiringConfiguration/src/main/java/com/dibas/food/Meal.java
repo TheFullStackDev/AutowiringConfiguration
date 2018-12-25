@@ -1,0 +1,58 @@
+	package com.dibas.food;
+
+public class Meal {
+
+	private Fruit fruit;
+	private Dairy dairy;
+	private Grain grain;
+	private Meat meat;
+	private Vegetable veg;
+	 
+		
+	
+	public Dairy getDairy() {
+		return dairy;
+	}
+	public void setDairy(Dairy dairy) {
+		this.dairy = dairy;
+	}
+	public Fruit getFruit() {
+		return fruit;
+	}
+	public void setFruit(Fruit fruit) {
+		this.fruit = fruit;
+	}
+	public Grain getGrain() {
+		return grain;
+	}
+	public void setGrain(Grain grain) {
+		this.grain = grain;
+	}
+	public Meat getMeat() {
+		return meat;
+	}
+	public void setMeat(Meat meat) {
+		this.meat = meat;
+	}
+	public Vegetable getveg() {
+		return veg;
+	}
+	public void setveg(Vegetable veg) {
+		this.veg = veg;
+	}
+	
+	public String whatsInTodaysMeal() {
+		
+		String menu = "Today's Meal contains:\n";
+		
+		if(fruit!=null) menu += "some fruits: ";
+		if(dairy!=null) menu += "some dairy: ";
+		if(grain!=null) menu += "some grain: ";
+		if(meat!=null) menu += "some meat: ";
+		if(veg!=null) menu +="some vegs: ";
+ 		
+		return menu;
+	}
+	
+	
+}
