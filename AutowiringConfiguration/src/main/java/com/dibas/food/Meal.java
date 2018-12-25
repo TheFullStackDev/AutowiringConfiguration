@@ -4,15 +4,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Meal {
 
-	@Autowired
+	//@Autowired
 	private Fruit fruit;
-	@Autowired
+	//@Autowired
 	private Dairy dairy;
-	@Autowired
+	//@Autowired
 	private Grain grain;
-	@Autowired
+	//@Autowired
 	private Meat meat;
 	
+	public Meal() {}
+	
+	@Autowired
+	public Meal(Fruit fruit, Dairy dairy, Grain grain, Meat meat, Vegetable veg) {
+		super();
+		this.fruit = fruit;
+		this.dairy = dairy;
+		this.grain = grain;
+		this.meat = meat;
+		this.veg = veg;
+	}
+
+
 	private Vegetable veg;
 
 	public Dairy getDairy() {
@@ -50,7 +63,7 @@ public class Meal {
 	public Vegetable getveg() {
 		return veg;
 	}
-	@Autowired
+	//@Autowired
 	public void setveg(Vegetable veg) {
 		this.veg = veg;
 	}

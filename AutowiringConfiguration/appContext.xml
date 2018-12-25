@@ -7,15 +7,16 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <context:annotation-config/>
+
+	<context:annotation-config />
 
 	<bean id="fruit" class="com.dibas.food.Fruit" />
 	<bean id="dairy" class="com.dibas.food.Dairy" />
 	<bean id="grain" class="com.dibas.food.Grain" />
 	<bean id="meat" class="com.dibas.food.Meat" />
-    <bean id="vegetable" class="com.dibas.food.Vegetable" />
+	<bean id="vegetable" class="com.dibas.food.Vegetable" />
 
-	<bean id="mealByAnnotation" class="com.dibas.food.Meal"/>
+
+	<bean id="mealByAnnotation" class="com.dibas.food.Meal" />
 
 </beans>
