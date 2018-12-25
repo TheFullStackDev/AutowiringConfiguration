@@ -4,18 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Meal {
 
-	//@Autowired
+	@Autowired(required=false)
 	private Fruit fruit;
-	//@Autowired
+	@Autowired
 	private Dairy dairy;
-	//@Autowired
+	@Autowired
 	private Grain grain;
-	//@Autowired
+	@Autowired
 	private Meat meat;
-	
+	@Autowired
 	public Meal() {}
 	
-	@Autowired
+	
 	public Meal(Fruit fruit, Dairy dairy, Grain grain, Meat meat, Vegetable veg) {
 		super();
 		this.fruit = fruit;
