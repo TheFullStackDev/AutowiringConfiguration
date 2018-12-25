@@ -12,15 +12,14 @@ public class MyApp {
 
 		ApplicationContext appContext = new FileSystemXmlApplicationContext("appContext.xml");
 
+		Meal myMealByAnnotation = (Meal) appContext.getBean("mealByAnnotation");
+		System.out.println("MealByAnnotation : " + myMealByAnnotation.whatsInTodaysMeal());
+
 		/*
-		 * Meal myMealByAnnotation = (Meal) appContext.getBean("mealByAnnotation");
-		 * System.out.println("MealByAnnotation : "+myMealByAnnotation.whatsInTodaysMeal
-		 * ());
+		 * Fruit myfruit = (Fruit) appContext.getBean("fruit");
+		 * System.out.println(myfruit.talkAboutYou());
 		 */
 
-		Fruit myfruit = (Fruit) appContext.getBean("fruit");
-		System.out.println(myfruit.talkAboutYou());
-		
 		((FileSystemXmlApplicationContext) appContext).close();
 
 	}
